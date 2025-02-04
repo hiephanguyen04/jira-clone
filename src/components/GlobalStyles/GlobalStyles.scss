@@ -1,0 +1,102 @@
+@import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+    --primary: rgb(7, 71, 166);
+
+    --black: #000;
+    --text-color: rgb(66, 82, 110);
+    --white: #fff;
+    //default
+    --default-layout-height: 60px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
+}
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+}
+
+a.active {
+    color: rgb(0, 82, 204);
+    background: rgb(235, 236, 240);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    vertical-align: middle;
+    line-height: 1;
+    padding: 0px 12px;
+    white-space: nowrap;
+    border-radius: 3px;
+    transition: all 0.1s ease 0s;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14.5px;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 82, 204);
+    font-weight: normal;
+    margin-top: 15px;
+
+    &.outline {
+        background-color: transparent;
+        color: rgb(0, 82, 204);
+        border: 1px solid rgb(0, 82, 204);
+    }
+    &:hover {
+        background-color: rgba(0, 82, 204, 0.345);
+    }
+}
+
+.ant-select-item-option-grouped {
+    padding-left: 10px;
+}
+
+//antd modal
+
+.ant-modal-header {
+    padding: 8px 24px;
+    margin: 3px 0;
+}
+.ant-modal-body {
+    padding: 0;
+}
+
+//antd select
+.ant-select-selector {
+    width: 100%;
+}
+.select {
+    .ant-select-selector {
+        border: none !important;
+        outline: none!important;
+        .ant-select-selection-search-input{
+            &::placeholder{
+            }
+        }
+        &:focus{
+            border: none;
+            outline: none;
+        }
+        .ant-select-selection-placeholder{
+            color: blue;
+
+        }
+    }
+}

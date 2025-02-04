@@ -1,0 +1,59 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.editForm {
+    width: 640px;
+    min-height: 100vh;
+}
+.inputForm {
+    margin-top: 20px;
+
+    label {
+        display: block;
+        padding-bottom: 8px;
+        color: rgb(94, 108, 132);
+        font-weight: 500;
+        font-size: 14px;
+    }
+    input {
+        height: 32px;
+        width: 100%;
+        padding: 0px 9px;
+        border-radius: 3px;
+        border: 1px solid rgb(223, 225, 230);
+        color: rgb(23, 43, 77);
+        background: rgb(244, 245, 247);
+        font-weight: normal;
+        font-size: 15px;
+
+        &.errorInput {
+            box-shadow: rgb(255 128 137) 0px 0px 0px 1px inset, rgb(255 204 208 / 20%) 0px 0px 0px 3px;
+        }
+
+        &:focus {
+            background: rgb(255, 255, 255);
+            border: 1px solid rgb(76, 154, 255);
+            box-shadow: rgb(76 154 255) 0px 0px 0px 1px;
+        }
+    }
+}
+
+.error {
+    margin-top: 6px;
+    line-height: 1;
+    color: rgb(225, 60, 60);
+    font-weight: normal;
+    font-size: 12.5px;
+}
+
+.loading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.select {
+    div {
+        background-color: rgb(244, 245, 247) !important;
+    }
+}

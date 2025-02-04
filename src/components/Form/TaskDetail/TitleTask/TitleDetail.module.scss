@@ -1,0 +1,60 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.btns {
+    display: flex;
+    align-items: center;
+}
+.itemBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    vertical-align: middle;
+    line-height: 1;
+    padding: 0px 12px;
+    white-space: nowrap;
+    border-radius: 3px;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14.5px;
+    background: rgb(255, 255, 255);
+    color: rgb(66, 82, 110);
+    font-weight: normal;
+
+    &:hover {
+        background-color: rgb(235, 236, 240);
+    }
+    .titleBtn {
+        padding-left: 7px;
+    }
+}
+
+.inputForm {
+    width: 130px;
+}
+.option {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgb(94, 108, 132);
+    font-size: 13px;
+    .icon {
+        font-size: 17px;
+        margin-right: 7px;
+    }
+    span {
+        font-size: 10pz;
+    }
+}
+
+.content {
+    display: flex;
+    // gap: 20px;
+    padding-top: 10px;
+}

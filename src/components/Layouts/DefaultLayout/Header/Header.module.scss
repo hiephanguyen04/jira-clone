@@ -1,0 +1,106 @@
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(205, 200, 200);
+    color: #555;
+    position: fixed;
+    left: 300px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: rgb(9 30 66 / 25%) 0px 1px 2px 0px;
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .search {
+            display: flex;
+            align-items: center;
+            padding: 3px 8px;
+            border: 0.5px solid rgb(50, 47, 47);
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .item {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+        position: relative;
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .icon {
+            font-size: 20px;
+            margin-right: 6px;
+        }
+        span {
+            font-size: 15px;
+        }
+    }
+}
+
+.menu-list {
+    width: 232px;
+    .wrapper-menu {
+        width: 100%;
+        max-height: min((100vh - 96px) - 60px, 734px);
+        min-height: 100px;
+        padding-top: 8px;
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 /12%) 0px 2px 12px;
+    }
+
+   
+}
+
+.menu-item {
+    display: block;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 14px 18px;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+
+
+    .icon{
+        font-size: 18px;
+    }
+    span{
+        margin-left: 5px;
+    }
+
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.85);
+        background: rgba(22, 24, 35, 0.03)!important;
+    }
+}
