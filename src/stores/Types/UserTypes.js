@@ -1,4 +1,0 @@
-export const LOGIN ="LOGIN"
-export const REGISTER ="REGISTER"
-export const GET_ALL_USER_PROJECT ="GET_ALL_USER_PROJECT"
-export const SEARCH_USER ="SEARCH_USER"

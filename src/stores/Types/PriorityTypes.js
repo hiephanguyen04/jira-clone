@@ -1,1 +1,0 @@
-export const GET_ALL_PRIORITY = "GET_ALL_PRIORITY"
